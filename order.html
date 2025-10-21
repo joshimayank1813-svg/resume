@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Now - Khao Yaro</title>
+    <link rel="stylesheet" href="order.css">
+</head>
+<body>
+    <div class="order-container">
+        <h1 class="glow">Book Your table 🍜</h1>
+        <p class="tagline">Fresh, hot, and made with love!</p>
+
+        <form class="order-form" action="#" method="post">
+            <div class="form-group">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+            </div>
+
+            <div class="form-group">
+                <label for="table">Number of Table to Book</label>
+                <textarea id="table" name="table" placeholder="Enter your No.of Table" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="dish">Select Dish:</label>
+                <select id="dish" name="dish" required>
+                    <option value="">-- Choose Your Favorite Dish --</option>
+                    <option value="momos">Steamed Momos</option>
+                    <option value="biryani">Spicy Chicken Biryani</option>
+                    <option value="pizza">Cheese Burst Pizza</option>
+                    <option value="burger">Loaded Burger</option>
+                    <option value="pasta">Creamy Pasta</option>
+                    <option value="thali">Indian Thali</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quantity" min="1" max="20" required>
+            </div>
+
+            <button type="submit" class="order-btn">Confirm Order</button>
+        </form>
+
+        <div class="back-link">
+            <a href="index.html">← Back to Home</a>
+        </div>
+    </div>
+</body>
+</html>
