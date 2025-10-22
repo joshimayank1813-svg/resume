@@ -13,6 +13,7 @@
 body {
     color: #fff;
     line-height: 1.6;
+    overflow: hidden;
 
     /* Animated Dark Gradient Background */
     background: linear-gradient(-45deg, #0a0a0a, #1b1b1b, #2e2e2e, #1b1b1b);
@@ -59,7 +60,7 @@ a{
 }
 
 .name h1 {
-    color: #e2881d;
+    color: #ffffff;
 }
 
 .navicon ul {
@@ -161,14 +162,6 @@ a{
         transform: rotate(-45deg) translate(7px, -7px);
     }
 }
-
-
-
-
-
-
-
-
 
 
 
