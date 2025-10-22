@@ -13,6 +13,7 @@
 body {
     color: #fff;
     line-height: 1.6;
+    overflow-x: hidden;
     
 
     /* Animated Dark Gradient Background */
