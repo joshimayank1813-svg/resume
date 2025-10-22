@@ -79,6 +79,99 @@ a{
     color: #e2881d;
 }
 
+
+/* Hamburger Menu Styling */
+.nav-toggle {
+    display: none;
+}
+
+.nav-toggle-label {
+    display: none;
+    position: relative;
+    height: 30px;
+    width: 35px;
+    cursor: pointer;
+    z-index: 150;
+}
+
+.nav-toggle-label span,
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+    display: block;
+    background: #e2881d;
+    height: 4px;
+    width: 100%;
+    border-radius: 2px;
+    position: absolute;
+    transition: all 0.3s ease;
+}
+
+.nav-toggle-label span {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.nav-toggle-label span::before {
+    content: '';
+    top: -10px;
+}
+
+.nav-toggle-label span::after {
+    content: '';
+    top: 10px;
+}
+
+/* Show hamburger on small screens */
+@media(max-width: 900px) {
+    .navicon {
+        position: fixed;
+        top: 70px;
+        right: -100%;
+        width: 250px;
+        height: 100vh;
+        background: rgba(0,0,0,0.95);
+        flex-direction: column;
+        padding-top: 50px;
+        gap: 30px;
+        transition: right 0.3s ease;
+    }
+
+    .navicon ul {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .nav-toggle-label {
+        display: block;
+    }
+
+    /* Slide menu in when checked */
+    .nav-toggle:checked + .nav-toggle-label + .navicon {
+        right: 0;
+    }
+
+    /* Hamburger animation */
+    .nav-toggle:checked + .nav-toggle-label span {
+        background: transparent;
+    }
+    .nav-toggle:checked + .nav-toggle-label span::before {
+        transform: rotate(45deg) translate(7px, 7px);
+    }
+    .nav-toggle:checked + .nav-toggle-label span::after {
+        transform: rotate(-45deg) translate(7px, -7px);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
 .book-btn {
     background: #e2881d;
     padding: 10px 20px;
